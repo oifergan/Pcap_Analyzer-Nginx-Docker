@@ -3,7 +3,7 @@
 # Based on CentOS
 ############################################################
 
-# Set the base image to Ubuntu
+# Set the base image to Centos7
 FROM centos:latest
 
 # File Author / Maintainer
@@ -46,12 +46,9 @@ RUN chmod  +x /usr/share/nginx/html/ps_analyzer_all
 # Adding the configuration file of the Supervisor
 ADD supervisord.conf /etc/
 
-# Adding the default file
-ADD index.php /var/www/index.php
-
 # Set the port to 80 
 EXPOSE 80
 
 # Executing supervisord
-#CMD ["supervisord", "-n"]
-CMD ["/bin/bash"]
+CMD ["supervisord", "-n"]
+#CMD ["/bin/bash"]
