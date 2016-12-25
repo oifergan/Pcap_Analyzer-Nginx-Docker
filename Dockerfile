@@ -40,6 +40,7 @@ ADD www.conf /etc/php-fpm.d/www.conf
 ADD php-fpm.conf /etc/php-fpm.conf
 RUN mkdir /usr/share/nginx/html/uploads
 RUN chmod -R 777 /usr/share/nginx/html/uploads
+ADD general_surfing.pcap /usr/share/nginx/html/uploads/general_surfing.pcap
 RUN chmod -R +x /usr/share/nginx/html/upload.php
 RUN chmod  +x /usr/share/nginx/html/ps_analyzer_all
 
