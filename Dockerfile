@@ -26,7 +26,7 @@ RUN pip install supervisor
 # Installing ps_analyser dependencies
 
 RUN yum -y install libnl-devel.x86_64 libnl.x86_64
-RUN yum -y install json-c libtool numad.x86_64 numactl-devel.x86_64 numactl.x86_64
+RUN yum -y install json-c libtool numad.x86_64 numactl-devel.x86_64 numactl.x86_64 gcc g++
 
 
 # Adding the configuration file of the nginx
