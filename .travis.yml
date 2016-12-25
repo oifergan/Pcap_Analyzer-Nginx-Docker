@@ -1,0 +1,11 @@
+language: php
+
+services:
+  - docker
+
+before_install:
+  - docker build -t oifergan:nDPI-Nginx-Docker .
+  - docker run -d -p 8081:80 oifergan:nDPI-Nginx-Docker
+  - docker exec $(docker ps|grep oifergan|awk '{print $1}') ps -ef
+  - docker exec $(docker ps|grep oifergan|awk '{print $1}') /usr/share/nginx/html/ps_analyzer_all -i /usr/share/nginx/html/uploads/general_surfing.pcap -v 1
+
