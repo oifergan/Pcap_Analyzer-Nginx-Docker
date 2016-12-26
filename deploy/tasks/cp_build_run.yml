@@ -1,0 +1,14 @@
+- copy:
+    src: ../../nDPI-Nginx-Docker
+    dest: /tmp/
+    owner: root
+    group: root
+    mode: 0777
+    directory_mode: yes
+    follow: yes
+
+- name: run build_run_container.sh
+  remote_user: root
+  sudo: no
+  command: sh /tmp/nDPI-Nginx-Docker/deploy/build_run_container.sh
+
