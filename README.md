@@ -65,7 +65,7 @@ now you can install Ansible...
    .  
    .  
   
-2. go to deploy folder and edit the "deploy.yml" with the correct hosts group name (the default is nginx).
+2. go to deploy folder and edit the "deploy.yml" with the correct hosts group name (the default is aws).
 3. from the deploy folder run "./deploy.sh"
 
 ###As an example you can deploy it against an ec2 instance i have in AWS  
