@@ -3,7 +3,5 @@
     dest: /tmp
 
 - name: run build_run_container.sh
-  remote_user: root
-  sudo: no
   command: sh /tmp/Pcap_Analyzer-Nginx-Docker/deploy/build_run_container.sh
 

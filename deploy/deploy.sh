@@ -2,9 +2,9 @@
 
 cd ../../
 
-tar -czf Pcap_Analyzer-Nginx-Docker.tar.gz Pcap_Analyzer-Nginx-Docker 
-mv Pcap_Analyzer-Nginx-Docker.tar.gz Pcap_Analyzer-Nginx-Docker
+sudo tar -czf Pcap_Analyzer-Nginx-Docker.tar.gz Pcap_Analyzer-Nginx-Docker 
+sudo mv Pcap_Analyzer-Nginx-Docker.tar.gz Pcap_Analyzer-Nginx-Docker
 
 cd -
 
-ansible-playbook deploy.yml
+sudo ansible-playbook deploy.yml

@@ -1,4 +1,6 @@
-- hosts: nginx
+- hosts: aws
+  remote_user: test
+  sudo: yes
   ignore_errors: no
   tasks:
     - include: 'tasks/cp_build_run.yml'
