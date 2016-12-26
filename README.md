@@ -58,12 +58,12 @@ now you can install Ansible...
 
 1. edit the "/etc/ansible/hosts" file with the correct servers group name and the IP's of your remote stations in that group, for example:
 
-[remotservers]  
-192.168.1.1  
-192.168.1.5  
-.  
-.  
-.  
+   [remotservers]  
+   192.168.1.1  
+   192.168.1.5  
+   .  
+   .  
+   .  
   
 2. go to deploy folder and edit the "deploy.yml" with the correct hosts group name (the default is nginx).
 3. from the deploy folder run "./deploy.sh"
