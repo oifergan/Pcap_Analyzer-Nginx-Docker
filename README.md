@@ -7,7 +7,7 @@
 
 It is a lightweight demonstration for pcap analyzing. Based on OpenDPI . This demo runs as a Web(Nginx) application over Docker container.
 
-### How I Works
+### How Do I Make It Works
 
 This demo runs as a Docker Container over Centos 7. 
 #### In order to run it localy you need to have:
