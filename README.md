@@ -68,7 +68,9 @@ now you can install Ansible...
 2. go to deploy folder and edit the "deploy.yml" with the correct hosts group name (the default is nginx).
 3. from the deploy folder run "./deploy.sh"
 
-As an example you can deploy it against an ec2 instance i have in AWS and its IP is 54.213.239.136 the user/pass are: test/Psoi12#
+As an example you can deploy it against an ec2 instance i have in AWS:   
+IP is 54.213.239.136  
+user/pass are: test/Psoi12#  
 Dont forget to exchange keys using "ssh-copy-id test@54.213.239.136" from central server to remote one(this one).
 
 
