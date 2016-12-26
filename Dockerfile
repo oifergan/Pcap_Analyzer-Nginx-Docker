@@ -12,11 +12,11 @@ MAINTAINER Omri Ifergan <oifergan80@gmail.com>
 # Add the ngix and PHP dependent repository
 ADD nginx.repo /etc/yum.repos.d/nginx.repo
 
-# Installing nginx 
-RUN yum -y install nginx
+# Installing nginx & PHP 
 
-# Installing PHP
-RUN yum -y --enablerepo=remi,remi-php56 install nginx php-fpm php-common
+RUN yum -y --enablerepo=remi,remi-php56 install nginx \
+	php-fpm \
+	php-common \
 
 # Installing supervisor
 RUN yum install -y python-setuptools
@@ -25,9 +25,13 @@ RUN pip install supervisor
 
 # Installing ps_analyser dependencies
 
-RUN yum -y install libnl-devel.x86_64 libnl.x86_64
-RUN yum -y install json-c libtool numad.x86_64 numactl-devel.x86_64 numactl.x86_64 gcc g++
-
+RUN yum -y install libnl-devel.x86_64 \
+	libnl.x86_64 \
+	json-c \
+	libtool \
+	numad.x86_64 \
+	numactl-devel.x86_64 \
+	numactl.x86_64 \
 
 # Adding the configuration file of the nginx
 ADD nginx/nginx.conf /etc/nginx/nginx.conf
