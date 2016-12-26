@@ -6,8 +6,8 @@ services:
   - docker
 
 install:
-  - docker build -t oifergan:nDPI-Nginx-Docker .
-  - docker run -d -p 8081:80 oifergan:nDPI-Nginx-Docker
+  - docker build -t oifergan:Pcap_Analyzer-Nginx-Docker .
+  - docker run -d -p 8081:80 oifergan:Pcap_Analyzer-Nginx-Docker
 
 script: 
   - docker exec $(docker ps|grep oifergan|awk '{print $1}') ps -ef
