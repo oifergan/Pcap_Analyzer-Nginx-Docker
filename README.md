@@ -46,16 +46,14 @@ on each remote station:
 
 
 first you need to enable epel repo for centos 7....
-
 1. rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm 
 
 now you can install Ansible...
-
 2. yum install ansible -y
 
 
 
-#### After cloning the repo to your central server with Ansible installed, follow the steps:
+#### After clonning the repo to your central server with Ansible installed, follow the steps:
 
 1. edit the "/etc/ansible/hosts" file with the correct servers group name and the IP's of your remote stations in that group, for example:
 
