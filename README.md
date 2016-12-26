@@ -37,7 +37,7 @@ on local machine:
 on each remote station:
 
 - Centos 7
-- Docker engine installed
+- python 2.7 and higher
 
 
 
@@ -65,16 +65,19 @@ now you can install Ansible...
    .  
    .  
   
+
 2. go to deploy folder and edit the "deploy.yml" with the correct hosts group name (the default is nginx).
 3. from the deploy folder run "./deploy.sh"
+4. from your favorite browser go to http://{your IP}:8081 and upload a pcap file
+
 
 ###As an example you can deploy it against an ec2 instance i have in AWS  
 Its IP is 54.213.239.136  
 user/pass are: test/Psoi12#  
-Dont forget to exchange keys using "ssh-copy-id test@54.213.239.136" from central server to remote one(this one).
+Don't forget to exchange keys using "ssh-copy-id test@54.213.239.136" from central server to remote one(this one).
 
 
-And thats about it, you can try the web app for analyzing pcaps.
+And thats about it, you can try the web app for analyzing pcaps.....
 
 
 
