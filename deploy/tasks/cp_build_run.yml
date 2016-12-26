@@ -1,9 +1,9 @@
 - unarchive:
-    src: ../../nDPI-Nginx-Docker.tar.gz
+    src: ../../Pcap_Analyzer-Nginx-Docker.tar.gz
     dest: /tmp
 
 - name: run build_run_container.sh
   remote_user: root
   sudo: no
-  command: sh /tmp/nDPI-Nginx-Docker/deploy/build_run_container.sh
+  command: sh /tmp/Pcap_Analyzer-Nginx-Docker/deploy/build_run_container.sh
 
