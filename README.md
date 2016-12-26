@@ -45,11 +45,11 @@ on each remote station:
 #### If you don't Have Ansible installed you can use the following steps:
 
 
-first you need to enable epel repo for centos 7....
-1. rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm 
+first you need to enable epel repo for centos 7....   
+1. rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm   
 
-now you can install Ansible...
-2. yum install ansible -y
+now you can install Ansible...  
+2. yum install ansible -y  
 
 
 
