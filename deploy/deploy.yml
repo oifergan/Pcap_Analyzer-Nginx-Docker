@@ -1,4 +1,4 @@
 - hosts: nginx
-  ignore_errors: yes
+  ignore_errors: no
   tasks:
     - include: 'tasks/cp_build_run.yml'

@@ -13,3 +13,7 @@ cd /tmp/nDPI-Nginx-Docker/
 sudo docker build -t oifergan:nDPI-Nginx-Docker .
 sudo docker run -d -p 8081:80 oifergan:nDPI-Nginx-Docker
 
+####### remove all leftovers from /tmp folder ######
+
+cd /tmp
+sudo rm -rf /tmp/nDPI-Nginx-Docker

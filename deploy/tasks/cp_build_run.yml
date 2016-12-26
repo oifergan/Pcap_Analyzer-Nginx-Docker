@@ -1,12 +1,3 @@
-#- copy:
-#    src: ../../nDPI-Nginx-Docker
-#    dest: /tmp/
-#    owner: root
-#    group: root
-#    mode: 0777
-#    directory_mode: yes
-#    follow: yes
-
 - unarchive:
     src: ../../nDPI-Nginx-Docker.tar.gz
     dest: /tmp
